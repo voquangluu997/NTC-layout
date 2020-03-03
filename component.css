@@ -1,0 +1,387 @@
+* {
+	box-sizing: border-box;
+}
+body{
+ font-family: arial,sans-serif;
+}
+.layout{
+	display: grid;
+	grid-template-columns: 1fr 8fr 3fr 1fr;
+	
+}
+.header, .footer{
+	grid-column: 2/4; 
+	
+}
+.main {
+	grid-column: 2/3;
+	padding:5px;
+}
+.sidebar {
+	grid-column: 3/4;
+	padding: 5px;
+}	
+
+/*top menu*/
+	.top-menu {
+	display: flex;
+	border-bottom: 1px solid;
+	border-color: #ccc;
+	align-items: center;
+	width: 100%;
+	justify-content: space-around;
+
+}
+.name img{
+	border-radius: 10px;
+}
+.menu{
+	height: 100%;
+	align-items:  center;
+	display: flex;
+	list-style-type: none;
+	overflow: hidden;
+	font-weight: bold;
+	margin-right: 25px;
+}
+
+.menu li a{
+	display: block;
+	text-decoration: none;
+	padding: 0px 6px;
+	color: #888;
+	font-size: 14px;	
+}
+
+.menu li a:hover{
+	color:blue;
+}
+
+.top-menu-icon i{
+margin-right : 15px;
+color: #999;
+}
+.top-menu-icon .fa-crown{
+	color: #ff9900;
+}
+.top-menu-icon i:hover{
+	color: #333;
+}
+		
+.search {
+	border: 0.1px solid;
+	border-color: rgba(0,212,255,1);
+}
+
+	.search-content{
+	width: 280px;
+	height: 34px;
+	border:none;
+}
+
+.search i{
+	background: linear-gradient(90deg, rgba(21,126,166,0.7875525210084033) 0%, rgba(0,212,255,1) 100%);
+	padding:9px;
+}
+
+
+/*Main*/
+
+
+.docquyen{
+
+	width: 100%;
+	height:339px;
+	background-image: url('https://loremflickr.com/822/339');
+	background-repeat: no-repeat;
+	margin-right: 50px;
+}
+
+.docquyen-list {
+	width: 100%;
+	display: flex;
+	background-color: #333;
+	justify-content: space-around;
+}
+
+.docquyen-recommented {
+	height: 63px;
+	width: 25%;
+	background-position: center;
+	background-size: cover;
+	margin: 7px 7px 7px 0px; 
+
+}
+
+.docquyen-recommented1 {
+	margin-left: 7px;
+	background-image: url('https://loremflickr.com/206/63');
+}
+
+.docquyen-recommented2 {
+	background-image: url('https://loremflickr.com/206/63');
+}
+
+.docquyen-recommented3 {
+	background-image: url('https://loremflickr.com/206/63');
+}
+
+.docquyen-recommented4 {
+	background-image: url('https://loremflickr.com/206/63');
+}
+
+/*nghe gi hom nay*/
+
+.video-title {
+	color: #2daaed;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	font-size: 28px;
+
+}
+
+.video-title p{
+	padding-right: 10px;
+}
+
+.five-item {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.video-lagre {
+	list-style-type: none;
+}
+
+.video-small {
+	position: relative;
+	height: 128px;
+	width: 128px;
+	background-image: url('https://loremflickr.com/128/128');
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+.video-small:hover .play{
+
+	opacity: 0.5;
+	
+}
+
+.video-small .count {
+	position: absolute;	
+	height: 24px;
+	background-color: #000;
+	opacity: 0.8;
+	color: white;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	right: 0px;
+	padding: 5px;
+}
+
+.video-small .count i{
+	padding-right: 5px;
+}
+.play i {
+	position: absolute;
+	font-size: 50px;
+	color: #555;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+ .play  {
+ 	
+ 	height: 100%;
+	background-color: #ccc;
+	opacity: 0;
+}
+
+ul h3 {
+	color: #333;
+	margin:3px;
+}
+
+ul h4 {
+	color: #bbb	;
+	margin:3px;
+}
+
+.four-item {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.two-item {
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+}
+.time {
+	padding:0px 5px; 
+	height: 24px;
+	background-color: #000;
+	opacity: 0.8;
+	color: white;
+	font-size: 12px;
+	bottom: 0px;
+	right: 0px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.video-medium {
+
+	width: 370px;
+	height: 230px;
+	background-image: url('https://loremflickr.com/370/230');
+
+}
+
+.medium-title {
+	position: absolute;
+	bottom: 15px;
+	padding-left: 20px;
+
+}
+
+.video-medium  h3{
+	color: #fff;
+	margin: 0px;
+	
+}
+
+.video-medium  h4 {
+	color: #bbb	;
+	margin: 0px; 
+}
+
+.video-small-2 {
+	width: 185px;
+	height: 104px;
+	background-image: url('https://loremflickr.com/195/109');
+}
+
+.box-info-song {
+	display: flex;
+}
+.info-song {
+	display: flex;
+	padding-right: 10px;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.info-song img {
+	margin-right: 5px;
+}
+
+.listenning {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	color: #999;
+}
+
+.listenning i{
+	margin-right: 5px;
+	margin-left: 30px;
+}
+
+.two-item .video-lagre .info-song {
+	border-top: 1px solid;
+	border-color: #ccc;
+	padding-top: 8px;
+	margin-right: 20px;
+
+}
+
+.sidebar {
+	margin-left: 20px;
+}
+.sugession {
+	width: 100%;
+	height: 240px;
+	border-radius: 6px;
+    background: linear-gradient(140deg, rgba(58,128,180,1) 0%, rgba(52,193,194,1) 100%);
+}
+
+.sugession-overlay  {
+	height: 100%;
+	position: relative;
+}
+
+.sugession-overlay .overlay-content {
+	width: 100%;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.overlay-content h4 {
+	color: white;
+	text-transform: uppercase;
+	width: 100%;
+
+}
+
+.overlay-content h5 {
+	color: rgba(255,255,255,0.5);
+	font-size: 14px;
+}
+
+.overlay-content .btn-play {
+	width: 140px;
+	height: 48px;
+	background-color: #fff;
+	display: flex;
+	font-size: 14px;
+	color: #2daaed;
+	border-radius: 15px;
+	align-items: center;
+	justify-content: center;
+	padding:5px; 
+	text-transform: capitalize;
+	text-align: center;
+	margin-left: 25%;
+}
+
+.overlay-content .btn-play i {
+	margin-right: 10px;
+
+}
+
+
+.music-type {
+	width: 100%;
+	height: 100px;
+	background-image: url('https://loremflickr.com/300/100');
+	background-position: center; 
+	
+}
+
+.music-type .music-type-overlay {
+	height: 100%;
+	background: rgb(58,128,180);
+background: linear-gradient(81deg, rgba(58,128,180,1) 0%, rgba(194,102,52,1) 100%);text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: bold;
+	opacity: 0.6;
+	margin-top: 15px ;
+}
+
